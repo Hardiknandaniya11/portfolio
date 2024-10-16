@@ -1,0 +1,206 @@
+.resume-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.resume-heading h1 {
+    position: relative;
+    color: #FAFAFA;
+    font-size: 35px;
+}
+
+.resume-heading::after {
+    width: 40px;
+    height: 5px;
+}
+
+.resume-heading::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+    border-radius: 3px;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 20px;
+    margin-bottom: 22px;
+}
+
+h3 {
+    color: #FAFAFA;
+    font-size: 25px;
+}
+
+.timeline-list {
+    list-style-type: none;
+    margin-left: 65px;
+    position: relative;
+}
+
+.timeline-item {
+    margin-bottom: 15px;
+    position: relative;
+}
+//:not(:last-child)
+
+.timeline-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -41px;
+    width: 2px;
+    height: calc(100% + 50px);
+    background: rgb(100 100 100 / 45%);
+}
+
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -43px;
+    height: 6px;
+    width: 6px;
+    background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px hsl(0, 0%, 22%);
+}
+
+.timeline-item span {
+    color: hsl(45, 54%, 58%);
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.timeline-item-title {
+    font-size: 16px;
+}
+
+.content {
+    color: hsl(0deg 0% 70.87%);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.7;
+    margin-top: 5px;
+}
+
+.projects {
+    width: 100%;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    gap: 1.5rem;
+
+    position: relative;
+    background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.125);
+    z-index: 1;
+    list-style-type: none;
+}
+
+.project-item::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.project-title h4 a{
+    font-size: 20px;
+    color: #FAFAFA;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.project-title h4 a:hover{
+    color: hsl(45, 54%, 58%);
+    transition: all 0.5s ease;
+}
+
+.project-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    min-width: 140px;
+    background-color: #444444;
+    border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .project-title h4 {
+        font-size: 17px;
+    }
+    
+    .project-logo {
+        min-height: 60px;
+        min-width: 60px;
+        height: 80px;
+        width: 80px;
+    }
+
+    .project-logo svg{
+        height: 60px;
+        width: 60px;
+    }
+    
+    .project-description p{
+        font-size: 12px !important;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+
+    .resume-heading h1 {
+        font-size: 28px;
+    }
+
+    .title-wrapper {
+        margin-top: 30px;
+        margin-bottom: 12px;
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+
+    .project-description p{
+        font-size: 14px !important;
+    }
+
+    .project-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        gap: 1.5rem;
+    }
+}

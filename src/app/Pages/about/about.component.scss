@@ -1,0 +1,115 @@
+.about-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+    margin-bottom: 22px;
+}
+
+.about-heading h1 {
+    position: relative;
+    color: #FAFAFA;
+    font-size: 35px;
+}
+
+.about-heading::after {
+    width: 40px;
+    height: 5px;
+}
+
+.about-heading::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+    border-radius: 3px;
+}
+
+.about-content p {
+    color: hsl(0deg 0% 70.87%);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.about-skills h2 {
+    color: #FAFAFA;
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+    padding: 15px;
+    padding-top: 45px;
+    border-radius: 14px;
+    box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.125);
+    cursor: pointer;
+    z-index: 1;
+    list-style-type: none;
+}
+
+.skill-list::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
+    border-radius: inherit;
+    z-index: -1;
+}
+
+.skill-list li {
+    margin: 10px;
+    background: linear-gradient(to bottom right, hsl(0, 0%, 25%) 0%, hsla(0, 0%, 25%, 0) 50%);
+    box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
+    border: 1px solid rgba(72, 72, 72, 0.45);
+    border-radius: 16px;
+    padding: 10px;
+    border-radius: 30%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-list li:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+h3 {
+    color: #FAFAFA;
+    font-size: 25px;
+}
+
+@media only screen and (max-width: 630px) {
+
+    .about-heading h1 {
+        font-size: 28px;
+    }
+
+    .content {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .title-wrapper {
+        margin-bottom: 15px;
+    }
+}

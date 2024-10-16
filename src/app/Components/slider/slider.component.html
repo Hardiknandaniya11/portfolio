@@ -1,0 +1,16 @@
+<div class="blog-slider">
+  <div class="blog-slider__wrp swiper-wrapper">
+    <div class="blog-slider__item swiper-slide" *ngFor="let slide of slides">
+      <div class="blog-slider__img">
+        <img [src]="slide.image" [alt]="slide.title">
+      </div>
+      <div class="blog-slider__content">
+        <span class="blog-slider__code">{{slide.date}}</span>
+        <div class="blog-slider__title">{{slide.title}}</div>
+        <div class="blog-slider__text">{{slide.text}}</div>
+        <a href="#" class="blog-slider__button">READ MORE</a>
+      </div>
+    </div>
+  </div>
+  <div class="blog-slider__pagination"></div>
+</div>
