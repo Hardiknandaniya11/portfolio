@@ -1,28 +1,79 @@
-# HardikPortfolio
+# Hardik Nandaniya Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
+Personal portfolio built with Angular, showcasing my work as an ML and Backend Engineer. The site includes profile information, experience, education, project highlights, certifications, and contact links.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Responsive dark portfolio UI with gold accent theme
+- Project showcase with Swiper-powered carousel
+- Certification carousel with fullscreen certificate preview
+- Resume download action
+- Contact and social profile links
+- Angular standalone component structure
+- Firebase Hosting ready
 
-## Code scaffolding
+## Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular 18
+- TypeScript
+- SCSS
+- Swiper.js
+- PrimeNG
+- Firebase Hosting
+
+## Getting Started
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
+
+```bash
+npm start
+```
+
+Open `http://localhost:4200/` in your browser.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Create a production build:
 
-## Running unit tests
+```bash
+npm run build
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The production files are generated in:
 
-## Running end-to-end tests
+```text
+dist/hardik_portfolio/browser
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Firebase Deployment
 
-## Further help
+Build the app first:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-"# portfolio" 
+```bash
+npm run build
+```
+
+Deploy to Firebase Hosting:
+
+```bash
+firebase deploy
+```
+
+## Project Structure
+
+```text
+src/app/Components   Reusable UI components
+src/app/Pages        Main portfolio pages
+public               Static assets
+```
+
+## Author
+
+Hardik Nandaniya  
+ML & Backend Engineer

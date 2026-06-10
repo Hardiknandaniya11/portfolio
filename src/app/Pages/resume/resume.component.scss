@@ -95,6 +95,12 @@ h3 {
     width: 100%;
 }
 
+.certificates,
+.certificate-slider {
+    width: 100%;
+    min-width: 0;
+}
+
 .project-list {
     display: flex;
     flex-direction: column;
